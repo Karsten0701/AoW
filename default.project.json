@@ -1,0 +1,33 @@
+{
+  "name": "Horror",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/shared"
+      },
+      "Packages": {
+        "$path": "Packages"
+      }
+    },
+
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/server"
+      },
+      "ServerPackages": {
+        "$path": "ServerPackages"
+      }
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$path": "src/client/StarterPlayer"
+      },
+      "StarterCharacterScripts": {
+        "$path": "src/client/StarterCharacter"
+      }
+    }
+  }
+}
