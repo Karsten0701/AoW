@@ -23,7 +23,10 @@
 
     "StarterPlayer": {
       "StarterPlayerScripts": {
-        "$path": "src/client/StarterPlayer"
+        "$path": "src/client/StarterPlayer",
+        "Controllers": {
+          "$path": "src/client/Controllers"
+        }
       },
       "StarterCharacterScripts": {
         "$path": "src/client/StarterCharacter"

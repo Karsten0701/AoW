@@ -4,6 +4,11 @@
 	- A / D (of pijltjes links/rechts)
 	- Muis aan de linker- of rechterkant van het scherm
 	- Op telefoon: aanraken aan de linker- of rechterkant van het scherm
+	2D side-view camera die op de Cam part gebaseerd is.
+	Je kunt de camera horizontaal bewegen:
+	- A / D (of pijltjes links/rechts)
+	- Muis aan de linker- of rechterkant van het scherm
+	- Op telefoon: aanraken aan de linker- of rechterkant van het scherm
 ]]
 
 local Players = game:GetService("Players")
@@ -16,6 +21,14 @@ game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
 local player = Players.LocalPlayer
 local camera = workspace.CurrentCamera
 
+-- Wacht tot de Cam part en bounds bestaan
+local map = workspace:WaitForChild("Map")
+local camPart = map:WaitForChild("Cam")
+
+-- Aanname: je hebt een folder `Bounds` in `Map` met twee parts: `Left` en `Right`
+local boundsFolder = map:WaitForChild("Bounds")
+local leftBound = boundsFolder:WaitForChild("Left")
+local rightBound = boundsFolder:WaitForChild("Right")
 -- Wacht tot de Cam part en bounds bestaan
 local map = workspace:WaitForChild("Map")
 local camPart = map:WaitForChild("Cam")
