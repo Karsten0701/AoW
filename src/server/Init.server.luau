@@ -1,0 +1,1 @@
+print("[AoW] Server initialized")
